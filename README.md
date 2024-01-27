@@ -59,7 +59,6 @@ The tool is also designed to improve efficiency and increase profits and user ex
 In the end, the tool aims to meet the diverse needs of users by providing accurate and competitive pricing information. This is expected to improve customer satisfaction by making it easier to determine the specifications and prices of used cars. The tool aims to make it easier and more certain for users to make decisions in the fast-paced world of buying and selling used cars.
 
 **In conclusion, introducing a predictive pricing tool is a major step forward in the used car market. It offers a sophisticated solution to the challenges of a diverse industry. By making the pricing process smoother and more efficient, the tool aims to improve the overall efficiency, reliability, and profitability of platforms dedicated to selling used cars.**
-## Overall Observation from Analysis 
 
 ## **For this dataset I'am using RMSE, MAE, and MAPE for predicting the price of used cars in Saudi Arabia.**
 
