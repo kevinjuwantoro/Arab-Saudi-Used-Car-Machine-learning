@@ -61,6 +61,30 @@ In the end, the tool aims to meet the diverse needs of users by providing accura
 **In conclusion, introducing a predictive pricing tool is a major step forward in the used car market. It offers a sophisticated solution to the challenges of a diverse industry. By making the pricing process smoother and more efficient, the tool aims to improve the overall efficiency, reliability, and profitability of platforms dedicated to selling used cars.**
 ## Overall Observation from Analysis 
 
+## **For this dataset I'am using RMSE, MAE, and MAPE for predicting the price of used cars in Saudi Arabia.**
+
+**1. Root Mean Square Error (RMSE):** 
+<img src = 'https://arize.com/wp-content/uploads/2023/08/RMSE-equation.png'>
+This metric gives me an idea of how much error the system typically makes in its predictions, with a higher weight for large errors. It’s a good choice if large errors are particularly undesirable. RMSE is a popular metric for regression problems like in this dataset. It measures the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are, and RMSE is a way to measure how spread out these residuals are. In other words, it tells me how concentrated the data is around the line of best fit. RMSE gives a relatively high weight to large errors. This means the RMSE should be more useful when large errors are particularly undesirable.
+
+**2. Mean Absolute Error (MAE):** 
+<img src = 'https://miro.medium.com/v2/resize:fit:723/1*9BhnZiaHkApC-gQt3rYpMQ.png'>
+
+This is the average absolute difference between the predicted and actual values. It’s a simple and straightforward metric that can give me a basic idea of my model’s performance. MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight. As a result, MAE is a simple and straightforward metric that provides an idea of how wrong wer predictions were.
+
+**3. Mean Absolute Percentage Error (MAPE):** 
+<img src = 'https://media.geeksforgeeks.org/wp-content/uploads/20211120204908/mapeformula.png'>
+
+This metric expresses the forecast error as a percentage, making it easy to interpret and understand. MAPE is a measure that expresses forecast error as a percentage, making it easy to interpret and understand. It expresses the absolute value of the fractional prediction error. This can be very useful if we want to understand the importance of the prediction errors in proportion to the actual values.
+
+As for the use of R², it’s not typically used with gradient boosting models like CatBoost and tec. R² is a measure of how well the model’s predictions fit the actual data, which is **more suitable for linear regression models.**
+
+Regarding **RMSLE and RMSPE, these metrics are indeed more useful when the target variable (in this case, price) has a wide range. If the range of prices in this dataset is relatively small, then these metrics might not be as informative.**
+
+MSE places more emphasis on larger errors due to the squared difference. In the case of Syarah.com, where large prediction errors could have significant consequences, MSE might not be ideal as it could disproportionately influence the overall evaluation. Although MSE can be a good metric in some cases, in the context of predicting used car prices, MSE might not be ideal. **The reason is that MSE places more emphasis on larger errors because it squares the difference between the prediction and the actual value.** In this case, if the model makes a very large prediction error on some examples, the MSE value will be very high, which may not reflect the overall performance of the model.
+
+**In conclusion, the choice of metric should align with the business objective and the nature of this data. RMSE, MAE, and MAPE can provide different perspectives on my model’s performance, and using all three can give me a more comprehensive understanding to predict price of Used car in Arab Saudi.**
+
 ## **Columns Description**
 
 | Column       | Description                                            |
