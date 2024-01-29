@@ -123,7 +123,7 @@ This example demonstrates how leveraging the insights from the machine learning 
 
 2. Model Accuracy: We'll consider the scores of MAE, RMSE, and MAPE to assess the accuracy of predictions. Lower scores indicate higher accuracy.
 
-3. Data Availability: The number of data points (Jumlah Data) provides insight into the reliability of predictions within each price range. More data points generally lead to more robust predictions.
+3. Data Availability: The number of data points (total Data) provides insight into the reliability of predictions within each price range. More data points generally lead to more robust predictions.
 
 
 **1. Profit Calculation:**
@@ -135,22 +135,22 @@ Acquisition cost + operational expenses.
 **3. Model Accuracy:** 
 We'll consider the average of MAE, RMSE, and MAPE scores to evaluate overall model performance.
 
-| Price Range (SAR) | Revenue (Midpoint) | Cost (Acquisition + Expenses) | Average Model Accuracy (MAE, RMSE, MAPE) |
+| Price Range (SAR) | Revenue (Midpoint) | Cost (Acquisition + Expenses) | Average (MAPE) in context to Business Percentage |
 |-------------------|--------------------|-------------------------------|----------------------------------------|
-| 5000-10000        | 7500               | 8500                          | 120.169                                |
-| 10000-20000       | 15000              | 9350                          | 93.323                                 |
-| 20000-30000       | 25000              | 10285                         | 46.506                                 |
-| 30000-40000       | 35000              | 11314                         | 35.269                                 |
-| 40000-50000       | 45000              | 12445                         | 31.756                                 |
-| 50000-100000      | 75000              | 13690                         | 18.773                                 |
-| 100000-150000     | 125000             | 15059                         | 16.146                                 |
-| 150000-200000     | 175000             | 16565                         | 20.212                                 |
-| 200000-250000     | 225000             | 18222                         | 25.793                                 |
-| 250000-300000     | 275000             | 20044                         | 27.466                                 |
-| 300000-350000     | 325000             | 22048                         | 32.934                                 |
-| 350000-400000     | 375000             | 24253                         | 58.912                                 |
-| 400000-450000     | 425000             | 26678                         | 29.158                                 |
-| 450000-500000     | 475000             | 29346                         | 25.159                                 |
+| 5000-10000        | 7500               | 8500                          | 177.986194                              |
+| 10000-20000       | 15000              | 9350                          | 90.500162                                  |
+| 20000-30000       | 25000              | 10285                         | 32.051504                                 |
+| 30000-40000       | 35000              | 11314                         | 26.374280                                 |
+| 40000-50000       | 45000              | 12445                         | 20.650771                                 |
+| 50000-100000      | 75000              | 13690                         | 13.171308                                 |
+| 100000-150000     | 125000             | 15059                         | 13.087935                                 |
+| 150000-200000     | 175000             | 16565                         | 15.568028                                |
+| 200000-250000     | 225000             | 18222                         | 15.643875                                 |
+| 250000-300000     | 275000             | 20044                         | 20.500389                                 |
+| 300000-350000     | 325000             | 22048                         | 22.325803                                |
+| 350000-400000     | 375000             | 24253                         | 31.367388                                 |
+| 400000-450000     | 425000             | 26678                         | 13.236018                                |
+| 450000-500000     | 475000             | 29346                         | 22.740542                                 |
 | >500000           | Not Applicable     | Not Applicable                | Not Applicable                         |
 
 
@@ -195,7 +195,9 @@ Let’s assume that the cost (acquisition + expenses) increases by 10% for each 
 
 We repeat these calculations for each price range to determine the potential profit. This allows us to assess which price range offers the highest profitability for Syarah.com while considering the accuracy of the machine learning model's predictions.
 
-**Based on these calculations, the best price range for Syarah.com in terms of potential profit and model accuracy is the range of 100,000 to 150,000 SAR. This range offers a high potential profit of 109941  SAR and relatively good model accuracy with an average score of 16.146. Additionally, there are a sufficient number of data points (123) available in this range, enhancing the reliability of predictions.**
+**Based on these calculations, the best price range for Syarah.com in terms of potential profit and model accuracy is the range of 100,000 to 150,000 SAR. This range offers a high potential profit of 109941  SAR and relatively good model accuracy with an average score of MAPE 13.087935.**
+
+**I use Average (MAPE) in context to Business Percentage because it seems its easier for us to see in percentage especially for stakeholder, and syarah.com teams.**
 
 **Therefore, Syarah.com should focus on listing cars within the price range of 100,000 to 150,000 SAR to maximize profitability and ensure accurate pricing predictions.**
 
