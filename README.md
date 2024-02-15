@@ -9,8 +9,6 @@ Syarah’s commitment to solving these pricing challenges is part of its wider m
 By providing a reliable way to price a wide range of vehicles, the tool aims to increase the trust users have in the platform.
 The tool is also designed to improve efficiency and increase profits and user experience for companies or platforms involved in buying and selling used cars. 
 
-The success of this analysis will be measured by the ability to provide actionable recommendations that can be implemented to enhance the transportation experience for elderly/senior passengers. Ultimately, the aim is to position Transjakarta as a preferred mode of transport for the elderly, thereby promoting their mobility, independence, and quality of life.
-
 ##  BackGround
 ## **Background Business Problem Understanding**
 <img src ='https://cdn.syarah.com/react/assets/images/bb1.webp'>
